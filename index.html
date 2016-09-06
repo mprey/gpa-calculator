@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">\
+    <meta name="GPA Calculator" content="">
+    <meta name="Mason Prey" content="">
+    <title>GPA Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <style>
+      .top-buffer {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">
+          GPA Calculator
+        </h1>
+        <p class="text-center">
+          calculate your <strong>theoretical</strong> grade point average
+        </p>
+      </div>
+      <table class="table table-responsive" id="table">
+        <tr class="ignore">
+          <th>Class</th>
+          <th>Credit</th>
+          <th>Semester 1</th>
+          <th>Semester 2</th>
+          <th>Type</th>
+        </tr>
+      </table>
+      <div class='grid'>
+        <div class='text-center'>
+          <div class='row'>
+            <div class='btn-group'>
+              <input class="btn btn-primary" type="button" value="Calculate" id="buttonCalculate"/>
+            </div>
+          </div>
+          <div class='row top-buffer'>
+            <div class='btn-group'>
+              <input class="btn btn-primary" type="button" value="Add Row" id="buttonAdd"/>
+              <input class="btn btn-primary" type="button" value="Reset" id="buttonReset"/>
+              <input class="btn btn-primary" type="button" value="Delete Row" id="buttonDelete"/>
+            </div>
+          </div>
+          <div class='row top-buffer'>
+            <div class='btn-group'>
+              <input class="btn btn-primary" type="button" value="Save Data" id="buttonSave"/>
+              <input class="btn btn-primary" type="button" value="Load Data" id="buttonLoad"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="scripts/gpa.js"></script>
+  </body>
+</html>
